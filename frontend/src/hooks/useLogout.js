@@ -9,7 +9,7 @@ const useLogout = () => {
         setLoading(true);
         const toastId = toast.loading("loading");
         try {
-            const res = await fetch("http://localhost:5001/api/auth/logout", {
+            const res = await fetch("https://chat-app-interface.onrender.com/api/auth/logout", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
             });
